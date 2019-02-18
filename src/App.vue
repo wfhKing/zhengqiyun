@@ -7,6 +7,7 @@
 					<el-breadcrumb-item><a href="">政策</a></el-breadcrumb-item>
 					<el-breadcrumb-item><a href="">诉求</a></el-breadcrumb-item>
 					<el-breadcrumb-item><a href="">登录</a></el-breadcrumb-item>
+					<el-breadcrumb-item><a href="">激活</a></el-breadcrumb-item>
 					<el-breadcrumb-item></el-breadcrumb-item>
 				</el-breadcrumb>
 			</el-header>
@@ -14,7 +15,6 @@
 					<img src="./assets/uugai.com_1547534130625.png" width="450px" height="100px" style="margin-top: 30px;" /><br/>
 					<el-input v-model="input" style="width: 600px;"></el-input>
 					<el-button type="primary" icon="el-icon-search" style="background-color: #409EFF;border: 1px solid #409EFF;">搜索</el-button>
-
 			</el-main>
 		</el-container>
 
