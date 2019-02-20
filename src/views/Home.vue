@@ -1,25 +1,29 @@
 <template>
 	<div class="home">
 		<el-container>
-			<el-header style="margin-bottom:10px;">
+			<el-header style="margin-bottom:5% ; ">
 				<el-row>
-					<el-col :span="6" :offset="2">
-						<div class="grid-content bg-purple-light" style="background-color: white;">
-							<img src="../assets/uugai.com_1547534130625.png" width="300px" height="70px" style="float: left;" />
+					<el-col  :span="8">
+						<div class="grid-content bg-purple-light">
+							<img src="../assets/uugai.com_1547534130625.png" width="50%"  style="margin:0px 20% 0px;	" />
 						</div>
 					</el-col>
-					<el-col :span="6" :offset="2">
-						<div class="grid-content bg-purple-light" style="background-color: white;">
-							<el-input placeholder="请输入内容" v-model="input" class="searchClass" style="width: 300px;">
+					<el-col :span="5">
+						<div class="grid-content bg-purple-light">
+
+						</div>
+					</el-col>
+					<el-col :span="11">
+						<div class="grid-content bg-purple-light">
+							<el-row>
+								
+							</el-row>
+							<el-input placeholder="请输入内容" v-model="input" class="searchClass"  style="width:50%; margin: 0px 40% 0px 0px;">
 								<template slot="append">
 									<el-button slot="append" icon="el-icon-search"></el-button>
 								</template>
 							</el-input>
-						</div>
-					</el-col>
-					<el-col :span="8">
-						<div class="grid-content bg-purple-light" style="background-color: white;">
-							<el-breadcrumb separator="" style="margin:27px 50px;font-size:15px">
+							<el-breadcrumb separator="" style=" margin:0px 40% 0px 0px;font-size:15px ;">
 								<el-breadcrumb-item><a href="">首页</a></el-breadcrumb-item>
 								<el-breadcrumb-item><a href="">政策</a></el-breadcrumb-item>
 								<el-breadcrumb-item><a href="">诉求</a></el-breadcrumb-item>
@@ -31,6 +35,9 @@
 					</el-col>
 				</el-row>
 			</el-header>
+			
+			
+			
 			<el-main>
 				<el-row>
 					<el-col :span="13" :offset="2">
@@ -47,7 +54,7 @@
 							<el-row>
 								<span style="float: left;margin-left: 20px;font-size: 15px;"><b>公告</b></span>
 								<a href="" style="float:right;font-size: 14px;">更多
-								<i class="el-icon-d-arrow-right"></i></a>
+									<i class="el-icon-d-arrow-right"></i></a>
 							</el-row>
 							<div>
 								<ul style="list-style-type:none;text-align: left;margin:-20px -10px">
@@ -79,15 +86,20 @@
 
 		</el-container>
 	</div>
+
 </template>
 
 <script>
+	import NavMenu from '@/components/NavMenu.vue'
 	export default {
 		name: 'home'
 	}
 </script>
 <style>
-	a{text-decoration:none}
+	a {
+		text-decoration: none
+	}
+
 	.searchClass {
 		margin-top: 15px;
 		border: 1px solid #c5c5c5;
