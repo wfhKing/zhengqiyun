@@ -1,55 +1,48 @@
 <template>
 	<div class="home">
 		<el-container>
-			<el-header style="margin-bottom:5%;">
-				<el-row>
-					<el-col :span="8">
-						<div class="grid-content bg-purple-light" style="background-color: white;">
-							<img src="../assets/uugai.com_1547534130625.png" width="50%"  style="margin:0px 20% 0px;	" />
-						</div>
-					</el-col>
-					<el-col :span="5">
-						<div class="grid-content bg-purple-light" style="background-color: white;">
-
-						</div>
-					</el-col>
-					<el-col :span="11">
-						<div class="grid-content bg-purple-light" style="background-color: white;">
-							<el-input placeholder="请输入内容" v-model="input" class="searchClass"  style="width:50%; margin: 0px 40% 0px 0px;">
-								<template slot="append">
-									<el-button slot="append" icon="el-icon-search"></el-button>
-								</template>
-							</el-input>
-						</div>
-					</el-col>
-				</el-row>
+			<el-header>
+				<div style="height: 100%;width: 100%;">
+					<el-row>
+						<el-col :span="7">
+							<div class="grid-content bg-purple-light">
+								<img src="./assets/uugai.com_1547534130625.png" width="60%" height="70px"/>
+							</div>
+						</el-col>
+						<el-col :span="7">
+							<div class="grid-content bg-purple-light">
+								<el-breadcrumb separator="">
+									<el-breadcrumb-item><a href="">首页</a></el-breadcrumb-item>
+									<el-breadcrumb-item><a href="">政策</a></el-breadcrumb-item>
+									<el-breadcrumb-item><a href="">诉求</a></el-breadcrumb-item>
+									<el-breadcrumb-item><a href="">登录</a></el-breadcrumb-item>
+									<el-breadcrumb-item><a href="">激活</a></el-breadcrumb-item>
+									<el-breadcrumb-item></el-breadcrumb-item>
+								</el-breadcrumb>
+								<el-input placeholder="请输入内容" v-model="input" class="searchClass" style="width:100%">
+									<template slot="append">
+										<el-button slot="append" icon="el-icon-search"></el-button>
+									</template>
+								</el-input>
+								
+							</div>
+						</el-col>
+					</el-row>
+				</div>
+				
 			</el-header>
-			
-			<NavMenu></NavMenu>
-			
-			<el-main>
-				<router-view/>
-			</el-main>
 
 		</el-container>
 	</div>
-
 </template>
 
 <script>
-	import NavMenu from '../components/NavMenu.vue'
 	export default {
-		name: 'home',
-		components:{
-			NavMenu:NavMenu
-		}
+		name: 'home'
 	}
 </script>
 <style>
-	a {
-		text-decoration: none
-	}
-
+	a{text-decoration:none}
 	.searchClass {
 		margin-top: 15px;
 		border: 1px solid #c5c5c5;
