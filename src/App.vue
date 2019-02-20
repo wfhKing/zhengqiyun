@@ -7,7 +7,6 @@
 					<el-breadcrumb-item><a href="">政策</a></el-breadcrumb-item>
 					<el-breadcrumb-item><a href="">诉求</a></el-breadcrumb-item>
 					<el-breadcrumb-item><a href="">登录</a></el-breadcrumb-item>
-					<el-breadcrumb-item><a href="">激活</a></el-breadcrumb-item>
 					<el-breadcrumb-item></el-breadcrumb-item>
 				</el-breadcrumb>
 			</el-header>
