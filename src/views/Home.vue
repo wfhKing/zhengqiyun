@@ -35,8 +35,8 @@
 					</el-col>
 				</el-row>
 			</el-header>
-			
-			
+			<NavMenu/>
+		
 			
 			<el-main>
 				<el-row>
