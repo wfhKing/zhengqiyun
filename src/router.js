@@ -5,37 +5,55 @@ import Notice from './components/Notice.vue'
 import Policy from './components/Policy.vue'
 import Atlas from './components/Atlas.vue'
 import Declare from './components/Declare.vue'
+import Login from './components/Login.vue'
+import Register from './components/Register.vue'
 
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes: [
-    {
-      path: '/',
-      name: 'notice',
-      component: Notice
-    },
+	mode: 'history',
+	base: process.env.BASE_URL,
+	routes: [
 		{
-			path: '/notice',
-			name: 'notice',
-			component: Notice
+			path: '/',
+			name: 'home',
+			component: Home,
+			children:[
+				{
+					path: '/',
+					name: 'notice',
+					component: Notice
+				}, {
+					path: '/notice',
+					name: 'notice',
+					component: Notice
+				}, {
+					path: '/policy',
+					name: 'policy',
+					component: Policy
+				}, {
+					path: '/atlas',
+					name: 'atlas',
+					component: Atlas
+				}, {
+					path: '/declare',
+					name: 'declare',
+					component: Declare
+				}
+				
+			]
 		},
 		{
-			path: '/policy',
-			name: 'policy',
-			component: Policy
+			path:'/login',
+			name:'login',
+			component:Login
 		},
 		{
-			path: '/atlas',
-			name: 'atlas',
-			component: Atlas
-		},
-		{
-			path: '/declare',
-			name: 'declare',
-			component: Declare
+			path:'/register',
+			name:'register',
+			component:Register
 		}
-  ]
+
+	]
 })
+

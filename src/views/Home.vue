@@ -14,13 +14,17 @@
 						</div>
 					</el-col>
 					<el-col :span="11">
-						<div class="grid-content bg-purple-light" style="background-color: white;">
-							<el-input placeholder="请输入内容" v-model="input" class="searchClass"  style="width:50%; margin: 0px 40% 0px 0px;">
+						<div class="grid-content bg-purple-light">
+							<el-input placeholder="请输入内容" v-model="input" class="searchClass"  style="width:50%; margin: 0px 10% 0px 0px;">
 								<template slot="append">
 									<el-button slot="append" icon="el-icon-search"></el-button>
 								</template>
 							</el-input>
+							
+							<router-link :to="{name:'login'}">登录/</router-link>
+							<router-link :to="{name:'register'}">注册</router-link>
 						</div>
+						
 					</el-col>
 				</el-row>
 			</el-header>
