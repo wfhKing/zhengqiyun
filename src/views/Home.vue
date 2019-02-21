@@ -14,13 +14,26 @@
 						</div>
 					</el-col>
 					<el-col :span="11">
+<<<<<<< HEAD
 						<div class="grid-content bg-purple-light" style="background-color: white;">
 							<el-input placeholder="请输入内容" v-model="input" class="searchClass"  style="width:50%; margin: 0px 40% 0px 0px;">
+=======
+						<div class="grid-content bg-purple-light">
+							<el-input placeholder="请输入内容" v-model="input" class="searchClass"  style="width:50%; margin: 0px 10% 0px 0px;">
+>>>>>>> 54c962170046ffa22dcaa66877f2ffaa1c475905
 								<template slot="append">
 									<el-button slot="append" icon="el-icon-search"></el-button>
 								</template>
 							</el-input>
+<<<<<<< HEAD
 						</div>
+=======
+							
+							<router-link :to="{name:'login'}">登录/</router-link>
+							<router-link :to="{name:'register'}">注册</router-link>
+						</div>
+						
+>>>>>>> 54c962170046ffa22dcaa66877f2ffaa1c475905
 					</el-col>
 				</el-row>
 			</el-header>

@@ -7,10 +7,17 @@
 			<router-link :to="{name:'policy'}">政策</router-link>
 		</el-menu-item>
 		<el-menu-item index="3">
+<<<<<<< HEAD
 			<router-link :to="{name:'atlas'}">申报政策</router-link>
 		</el-menu-item>
 		<el-menu-item index="4">
 			<router-link :to="{name:'declare'}">政策统计图</router-link>
+=======
+			<router-link :to="{name:'declare'}">申报政策</router-link>
+		</el-menu-item>
+		<el-menu-item index="4">
+			<router-link :to="{name:'atlas'}">政策统计图</router-link>
+>>>>>>> 54c962170046ffa22dcaa66877f2ffaa1c475905
 		</el-menu-item>
 	</el-menu>
 	</el-menu>
