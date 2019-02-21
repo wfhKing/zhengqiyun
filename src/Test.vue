@@ -1,143 +1,76 @@
 <template>
-	<div class="home">
-		<el-container>
-			<el-header>
-				<div style="height: 100%;width: 100%;">
-					<el-row>
-						<el-col :span="7">
-							<div class="grid-content bg-purple-light">
-								<img src="./assets/uugai.com_1547534130625.png" width="60%" height="70px"/>
-							</div>
-						</el-col>
-						<el-col :span="7">
-							<div class="grid-content bg-purple-light">
-								<el-breadcrumb separator="">
-									<el-breadcrumb-item><a href="">首页</a></el-breadcrumb-item>
-									<el-breadcrumb-item><a href="">政策</a></el-breadcrumb-item>
-									<el-breadcrumb-item><a href="">诉求</a></el-breadcrumb-item>
-									<el-breadcrumb-item><a href="">登录</a></el-breadcrumb-item>
-									<el-breadcrumb-item><a href="">激活</a></el-breadcrumb-item>
-									<el-breadcrumb-item></el-breadcrumb-item>
-								</el-breadcrumb>
-								<el-input placeholder="请输入内容" v-model="input" class="searchClass" style="width:100%">
-									<template slot="append">
-										<el-button slot="append" icon="el-icon-search"></el-button>
-									</template>
-								</el-input>
-								
-							</div>
-						</el-col>
-					</el-row>
+	<!-- 这个页面只是用于测试不同的代码 -->
+	<div class="test">
+		<el-row>
+			<el-col :span="14" :offset="1">
+				<div class="grid-content bg-purple">
+					<el-carousel :interval="5000" height="400px">
+						<el-carousel-item v-for="item in dataimg" :key="item">
+							<img :src="item.src" width="100%">
+							<p class="italictext" style="margin-left:20px">{{item.txt}}</p>
+						</el-carousel-item>
+					</el-carousel>
 				</div>
-				
-			</el-header>
-
-		</el-container>
+			</el-col>
+			<el-col :span="7" :offset="1">
+				<div class="grid-content bg-purple-light">
+					<el-row>
+						<span style="float: left;margin-left: 20px;font-size: 20px;"><b>公告</b></span>
+						<a href="" style="float:right;font-size: 14px;">更多
+							<i class="el-icon-d-arrow-right"></i></a>
+					</el-row>
+					<div>
+						<ul style="list-style-type:none;text-align: left;">
+							<li style="margin-bottom: 10px;">
+								<a href="#">这里放的是14个字以内的标题</a>
+								<span style="float: right;">2019-02-21</span>
+							</li>
+							<li>
+								<a href="#">这里放的是14个字以内的标题</a>
+								<span style="float: right;">2019-02-21</span>
+							</li>
+							<li>
+								<a href="#">这里放的是14个字以内的标题</a>
+								<span style="float: right;">2019-02-21</span>
+							</li>
+							<li>
+								<a href="#">这里放的是14个字以内的标题</a>
+								<span style="float: right;">2019-02-21</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</el-col>
+			<el-col :span="1">
+				<div class="grid-content bg-purple-light" style="background-color: white;"></div>
+			</el-col>
+		</el-row>
 	</div>
 </template>
 
 <script>
 	export default {
-		name: 'home'
+		name: 'home',
+		data() {
+			return {
+
+				dataimg: [{
+						src: require('./assets/img01.jpg'),
+						txt: '一站式服务',
+					},
+					{
+						src: require('./assets/img01.jpg'),
+						txt: '国际服务',
+					},
+					{
+						src: require('./assets/img01.jpg'),
+						txt: '全网渠道',
+					}
+				]
+			}
+		}
 	}
 </script>
 <style>
-	a{text-decoration:none}
-	.searchClass {
-		margin-top: 15px;
-		border: 1px solid #c5c5c5;
-		border-radius: 20px;
-	}
-
-
-	.searchClass .el-input-group__append {
-		border: none;
-		background-color: transparent;
-	}
-
-	.searchClass .el-input__inner {
-		height: 36px;
-		line-height: 36px;
-		border: none;
-		background-color: transparent;
-	}
-
-	.searchClass .el-icon-search {
-		font-size: 16px;
-	}
-
-	.searchClass .centerClass {
-		height: 100%;
-		line-height: 100%;
-		display: inline-block;
-		vertical-align: middle;
-		text-align: right;
-	}
-
-	.searchClass .line {
-		width: 1px;
-		height: 26px;
-		background-color: #c5c5c5;
-		margin-left: 14px;
-	}
-
-	.searchClass:hover {
-		border: 1px solid #D5E3E8;
-		background: #fff;
-	}
-
-	.searchClass:hover .el-icon-search {
-		color: #409eff;
-		font-size: 16px;
-	}
-
-	.el-row {
-		margin-bottom: 20px;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-	}
-
-	.el-col {
-		border-radius: 4px;
-	}
-
-	.bg-purple-dark {
-		background: #99a9bf;
-	}
-
-	.bg-purple {
-		background: #d3dce6;
-	}
-
-	.bg-purple-light {
-		background: #e5e9f2;
-	}
-
-	.grid-content {
-		border-radius: 4px;
-		min-height: 36px;
-	}
-
-	.row-bg {
-		padding: 10px 0;
-		background-color: #f9fafc;
-	}
-
-	.el-carousel__item h3 {
-		color: #475669;
-		font-size: 18px;
-		opacity: 0.75;
-		line-height: 300px;
-		margin: 0;
-	}
-
-	.el-carousel__item:nth-child(2n) {
-		background-color: #99a9bf;
-	}
-
-	.el-carousel__item:nth-child(2n+1) {
-		background-color: #d3dce6;
-	}
+	
 </style>

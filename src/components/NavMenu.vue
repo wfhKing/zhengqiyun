@@ -1,4 +1,5 @@
 <template>
+	<!-- 二级页面的导航栏 -->
 	<div id="navmenu">
 		<!-- <router-link :to="{name:'notice'}">首页</router-link>
 		<router-link :to="{name:'policy'}">政策</router-link>
@@ -14,10 +15,10 @@
 				<router-link :to="{name:'policy'}">政策</router-link>
 			</el-menu-item>
 			<el-menu-item index="3">
-				<router-link :to="{name:'declare'}">申报政策</router-link>
+				<router-link :to="{name:'atlas'}">申报政策</router-link>
 			</el-menu-item>
 			<el-menu-item index="4">
-				<router-link :to="{name:'atlas'}">政策统计图</router-link>
+				<router-link :to="{name:'declare'}">政策统计图</router-link>
 			</el-menu-item>
 		</el-menu>
 	</div>

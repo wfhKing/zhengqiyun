@@ -1,4 +1,5 @@
 <template>
+	<!-- 二级页面的汇总 -->
 	<div class="home">
 		<el-container>
 			<el-header style="margin-bottom:5%;">
@@ -10,9 +11,7 @@
 						</div>
 					</el-col>
 					<el-col :span="5">
-						<div class="grid-content bg-purple-light" style="background-color: white;">
-
-						</div>
+						<div class="grid-content bg-purple-light" style="background-color: white;"></div>
 					</el-col>
 					<el-col :span="11">
 						<div class="grid-content bg-purple-light">
@@ -21,7 +20,6 @@
 									<el-button slot="append" icon="el-icon-search"></el-button>
 								</template>
 							</el-input>
-							
 							<router-link :to="{name:'login'}">登录/</router-link>
 							<router-link :to="{name:'register'}">注册</router-link>
 						</div>

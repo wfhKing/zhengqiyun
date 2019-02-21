@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Home from './components/Home.vue'
 import Notice from './components/Notice.vue'
 import Policy from './components/Policy.vue'
 import Atlas from './components/Atlas.vue'
