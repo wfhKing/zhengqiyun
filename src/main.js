@@ -4,6 +4,10 @@ import Total from './Total.vue'
 import Home from './views/Home.vue'
 import './plugins/element.js'
 import router from './router'
+import echarts from 'echarts';
+
+Vue.prototype.$echarts = echarts;
+
 
 Vue.config.productionTip = false
 
