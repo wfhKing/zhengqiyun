@@ -13,27 +13,24 @@
 			<el-col :span="6">
 				<div class="grid-content bg-purple-light">
 					<el-row>
-						<span style="float: left;margin-left: 20px;font-size: 15px;"><b>公告</b></span>
+						<span style="float: left;margin-left: 20px;font-size: 20px;"><b>公告</b></span>
 						<a href="" style="float:right;font-size: 14px;">更多
 							<i class="el-icon-d-arrow-right"></i></a>
 					</el-row>
 					<div>
-						<ul style="list-style-type:none;text-align: left;margin:-20px -10px">
-							<li style="margin-bottom: -30px;">
-								<h4 style="margin-bottom: -30px;"><a href="">标题</a></h4>
-								<p style="font-size: 14px;width:50px;">1111111111111111111111111111111</p>
+						<ul style="list-style-type:none;text-align: left;>
+							<li>
+								<a href="">这里放的是14个字以内的标题</a>
+								<span style="width:1%">2019-02-21</span>
 							</li>
-							<li style="margin-bottom: -30px;">
-								<h4 style="margin-bottom: -30px;"><a href="">标题</a></h4>
-								<p style="font-size: 14px;">内容</p>
+							<li>
+								<a href="">标题</a>
 							</li>
-							<li style="margin-bottom: -30px;">
-								<h4 style="margin-bottom: -30px;"><a href="">标题</a></h4>
-								<p style="font-size: 14px;">内容</p>
+							<li>
+								<a href="">标题</a>
 							</li>
-							<li style="margin-bottom: -30px;">
-								<h4 style="margin-bottom: -30px;"><a href="">标题</a></h4>
-								<p style="font-size: 14px;">内容</p>
+							<li>
+								<a href="">标题</a>
 							</li>
 						</ul>
 					</div>

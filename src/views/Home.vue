@@ -2,6 +2,7 @@
 	<div class="home">
 		<el-container>
 			<el-header style="margin-bottom:5%;">
+				<!-- 头部 -->
 				<el-row>
 					<el-col :span="8">
 						<div class="grid-content bg-purple-light" style="background-color: white;">
@@ -29,15 +30,15 @@
 				</el-row>
 			</el-header>
 			
+			<!-- 导航 -->
 			<NavMenu></NavMenu>
 			
+			<!-- 各个页面 -->
 			<el-main>
 				<router-view/>
 			</el-main>
-
 		</el-container>
 	</div>
-
 </template>
 
 <script>
