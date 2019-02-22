@@ -2,20 +2,20 @@
 	<!-- 二级页面的汇总 -->
 	<div class="home">
 		<el-container>
-			<el-header style="margin-bottom:5%;">
+			<el-header>
 				<!-- 头部 -->
 				<el-row>
 					<el-col :span="8">
 						<div class="grid-content bg-purple-light" style="background-color: white;">
-							<img src="../assets/uugai.com_1547534130625.png" width="50%"  style="margin:0px 20% 0px;	" />
+							<img src="../assets/uugai.com_1547534130625.png" width="50%" style="margin:0px 20% 0px;	" />
 						</div>
 					</el-col>
 					<el-col :span="5">
 						<div class="grid-content bg-purple-light" style="background-color: white;"></div>
 					</el-col>
 					<el-col :span="11">
-						<div class="grid-content bg-purple-light">
-							<el-input placeholder="请输入内容" v-model="input" class="searchClass"  style="width:50%; margin: 0px 10% 0px 0px;">
+						<div class="grid-content bg-purple-light" style="background-color: white;">
+							<el-input placeholder="请输入内容" v-model="input" class="searchClass" style="width:50%; margin: 0px 10% 0px 0px;">
 								<template slot="append">
 									<el-button slot="append" icon="el-icon-search"></el-button>
 								</template>
@@ -23,17 +23,18 @@
 							<router-link :to="{name:'login'}">登录/</router-link>
 							<router-link :to="{name:'register'}">注册</router-link>
 						</div>
-						
+
 					</el-col>
 				</el-row>
 			</el-header>
-			
+
 			<!-- 导航 -->
 			<NavMenu></NavMenu>
-			
+
+
 			<!-- 各个页面 -->
 			<el-main>
-				<router-view/>
+				<router-view />
 			</el-main>
 		</el-container>
 	</div>
@@ -43,8 +44,8 @@
 	import NavMenu from '../components/NavMenu.vue'
 	export default {
 		name: 'home',
-		components:{
-			NavMenu:NavMenu
+		components: {
+			NavMenu: NavMenu
 		}
 	}
 </script>
