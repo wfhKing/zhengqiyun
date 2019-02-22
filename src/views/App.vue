@@ -12,7 +12,7 @@
 				</el-breadcrumb>
 			</el-header>
 			<el-main>
-					<img src="./assets/uugai.com_1547534130625.png" width="450px" height="100px" style="margin-top: 30px;" /><br/>
+					<img src="../assets/uugai.com_1547534130625.png" width="450px" height="100px" style="margin-top: 30px;" /><br/>
 					<el-input v-model="input" style="width: 600px;"></el-input>
 					<el-button type="primary" icon="el-icon-search" style="background-color: #409EFF;border: 1px solid #409EFF;">搜索</el-button>
 			</el-main>

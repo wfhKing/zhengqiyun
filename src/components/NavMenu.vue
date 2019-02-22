@@ -34,7 +34,7 @@
 
 	.shape {
 		margin: 20px auto;
-		width: 1150px;
+		width: 1250px;
 		height: 40px;
 		background-color: #6495ED;
 		list-style: none;

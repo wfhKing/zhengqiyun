@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import App from './App.vue'
-import Total from './Total.vue'
+import App from './views/App.vue'
+import Total from './views/Total.vue'
 import Home from './components/Home.vue'
 
 import Test from './Test.vue'

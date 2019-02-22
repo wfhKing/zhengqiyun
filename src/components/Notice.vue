@@ -1,6 +1,7 @@
 <template>
 	<!-- 二级页面的首页 -->
 	<div id="notice">
+		
 		<el-row>
 			<el-col :span="14" :offset="1">
 				<div class="grid-content bg-purple">

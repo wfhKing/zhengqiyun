@@ -1,7 +1,16 @@
 <template>
 	<!-- 这个页面只是用于测试不同的代码 -->
 	<div class="test">
-		<el-row>
+		<div style="margin: auto 10% ;">
+			<el-carousel :interval="5000" height="360px" style="width: 700px;">
+				<el-carousel-item v-for="item in dataimg" :key="item">
+					<img :src="item.src" width="100%">
+					<p class="italictext">{{item.txt}}</p>
+				</el-carousel-item>
+			</el-carousel>
+		</div>
+		
+		<!-- <el-row>
 			<el-col :span="14" :offset="1">
 				<div class="grid-content bg-purple">
 					<el-carousel :interval="5000" height="400px">
@@ -44,7 +53,7 @@
 			<el-col :span="1">
 				<div class="grid-content bg-purple-light" style="background-color: white;"></div>
 			</el-col>
-		</el-row>
+		</el-row> -->
 	</div>
 </template>
 
