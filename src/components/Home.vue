@@ -31,7 +31,6 @@
 			<!-- 导航 -->
 			<NavMenu></NavMenu>
 
-
 			<!-- 各个页面 -->
 			<el-main>
 				<router-view />

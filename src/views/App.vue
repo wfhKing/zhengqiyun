@@ -4,10 +4,18 @@
 		<el-container>
 			<el-header>
 				<el-breadcrumb separator="" style="float: right;margin:20px 20px">
-					<el-breadcrumb-item><a href="">首页</a></el-breadcrumb-item>
-					<el-breadcrumb-item><a href="">政策</a></el-breadcrumb-item>
-					<el-breadcrumb-item><a href="">诉求</a></el-breadcrumb-item>
-					<el-breadcrumb-item><a href="">登录</a></el-breadcrumb-item>
+					<el-breadcrumb-item>
+						<router-link :to="{path:'/home'}">首页</router-link>
+					</el-breadcrumb-item>
+					<el-breadcrumb-item>
+						<router-link :to="{path:'/home'}">政策</router-link>
+					</el-breadcrumb-item>
+					<el-breadcrumb-item>
+						<router-link :to="{path:'/home'}">诉求</router-link>
+					</el-breadcrumb-item>
+					<el-breadcrumb-item>
+						<router-link :to="{path:'/login'}">登录</router-link>
+					</el-breadcrumb-item>
 					<el-breadcrumb-item></el-breadcrumb-item>
 				</el-breadcrumb>
 			</el-header>
