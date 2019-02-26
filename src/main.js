@@ -11,7 +11,7 @@ import echarts from 'echarts';
 Vue.prototype.$echarts = echarts;
 
 Vue.config.productionTip = false
-
+ 
 new Vue({
   router,
   render: h => h(Total)
