@@ -1,11 +1,14 @@
 <template>
 	<div id="policy">
+		
+		
+		
 		<el-row :gutter="20">
-		  <el-col :span="6">
+		  <el-col :span="6" :offset="2">
 			  <div class="grid-content bg-purple">
 				  <el-row>
 					<el-card :body-style="{ padding: '0px' }">
-					  <img src="../assets/1.jpg" class="image">
+					  <img src="../assets/Policy_3.jpg" class="image" height="200px">
 					  <div style="padding: 14px;">
 						<span>最新政策</span>
 						<el-button type="text" class="button">更多</el-button>
@@ -17,13 +20,16 @@
 				</el-row>
 			  </div>
 		  </el-col>
-		  <el-col :span="6">
+		  
+		  
+		  
+		  <el-col :span="6" :offset="1">
 			  <div class="grid-content bg-purple">
 				  <el-row>
 				  	<el-card :body-style="{ padding: '0px' }">
-				  	<img src="../assets/1.jpg" class="image">
+				  	<img src="../assets/Policy_2.jpg" class="image" height="200px">
 				  	<div style="padding: 14px;">
-				  		<span>最新政策</span>
+				  		<span>解读政策</span>
 				  		<el-button type="text" class="button">更多</el-button>
 				  		<div class="bottom clearfix">						  
 				  		<p>xxxx</p>
@@ -33,13 +39,17 @@
 				  </el-row>
 			  </div>
 		  </el-col>
-		  <el-col :span="6">
+		  
+		  
+		  
+		  
+		  <el-col :span="6" :offset="1">
 			  <div class="grid-content bg-purple">
 				  <el-row>
 				  	<el-card :body-style="{ padding: '0px' }">
-				  	<img src="../assets/1.jpg" class="image">
+				  	<img src="../assets/Policy_1.jpg" class="image" height="200px">
 				  	<div style="padding: 14px;">
-				  		<span>最新政策</span>
+				  		<span>申报政策</span>
 				  		<el-button type="text" class="button">更多</el-button>
 				  		<div class="bottom clearfix">						  
 				  		<p>xxxx</p>
@@ -49,54 +59,118 @@
 				  </el-row>
 			  </div>
 		  </el-col>
-		  <el-col :span="6">
-			  <div class="grid-content bg-purple">
-				  <el-row>
-				  	<el-card :body-style="{ padding: '0px' }">
-				  	<img src="../assets/1.jpg" class="image">
-				  	<div style="padding: 14px;">
-				  		<span>最新政策</span>
-				  		<el-button type="text" class="button">更多</el-button>
-				  		<div class="bottom clearfix">						  
-				  		<p>xxxx</p>
-				  		</div>
-				  	</div>
-				  	</el-card>
-				  </el-row>
-			  </div>
-		   </el-col>
+
 		</el-row>
+		
+		
+		
+		
 		<el-row :gutter="20">
 		  <el-col :span="14">
 			  <div class="grid-content bg-purple">
 				  <el-tabs v-model="activeName2" type="card" @tab-click="handleClick">
 					  <el-tab-pane label="市级" name="first">
-
+						  
+						<el-row :gutter="20">
+							
+							
+						  <el-col :span="12">
+							  <div class="grid-content bg-purple" >
+								<a href="#">城企联动普惠养老专项行动实</a>
+								<b style="margin:0 30px ; font-size: 15px;">2019-02-25</b>
+							  </div>
+						  </el-col>
+						  
+						  
+						  <el-col :span="12" >
+							  <div  class="grid-content bg-purple">
+								<a href="#">城企联动普惠养老专项行动实</a>
+								<b style="margin:0 30px ; font-size: 15px;">2019-02-25</b>
+							  </div>
+						  </el-col>
+						  
+						  
+						  <el-col :span="12">
+							<div class="grid-content bg-purple">
+								<a href="#">城企联动普惠养老专项行动实</a>
+								<b style="margin:0 30px ; font-size: 15px;">2019-02-25</b>
+							</div>
+						  </el-col>
+						  
+						  
+						  <el-col :span="12">
+						  <div class="grid-content bg-purple">
+						  	<a href="#">城企联动普惠养老专项行动实</a>
+						  	<b style="margin:0 30px ; font-size: 15px;">2019-02-25</b>
+						  </div>
+						  </el-col>
+						  
+						  
+						  <el-col :span="12">
+						  <div class="grid-content bg-purple">
+						  	<a href="#">城企联动普惠养老专项行动实</a>
+						  	<b style="margin:0 30px ; font-size: 15px;">2019-02-25</b>
+						  </div>
+						  </el-col>
+						  
+						  
+						  <el-col :span="12">
+						  <div class="grid-content bg-purple">
+						  	<a href="#">城企联动普惠养老专项行动实</a>
+						  	<b style="margin:0 30px ; font-size: 15px;">2019-02-25</b>
+						  </div>
+						  </el-col>
+						  
+						</el-row> 
+						
+						
+						 
 					  </el-tab-pane>
+					  
 					  <el-tab-pane label="香洲" name="second">
 						  
 					  </el-tab-pane>
+					  
+					  
+					  
 					  <el-tab-pane label="斗门" name="third">
 						  
 					  </el-tab-pane>
+					  
+					  
+					  
 					  <el-tab-pane label="金湾" name="four">
 						  
 					  </el-tab-pane>
+					  
+					  
 					  <el-tab-pane label="横琴" name="five">
 						  
 					  </el-tab-pane>
+					  
+					  
 					  <el-tab-pane label="高新" name="six">
 						  
 					  </el-tab-pane>
+					  
+					  
 					  <el-tab-pane label="保税" name="seven">
 						  
 					  </el-tab-pane>
+					  
+					  
 					  <el-tab-pane label="万山" name="eight">
 						  
 					  </el-tab-pane>
+					  
+					  
 				  </el-tabs>
 			  </div>
 		  </el-col>
+		  
+		  
+		  
+		  
 		  <el-col :span="10">
 			  <div class="grid-content bg-purple">
 				  <a href="#"><img style="width: 80px; height: 100px;" src="../assets/logo.png"/>培训</a>
@@ -105,7 +179,10 @@
 				  <a href="#"><img style="width: 80px; height: 100px;" src="../assets/logo.png"/>申报</a>
 			  </div>
 		   </el-col>
-		</el-row>	
+		</el-row>
+			
+			
+			
 	</div>
 </template>
 

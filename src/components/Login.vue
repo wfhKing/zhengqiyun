@@ -1,7 +1,17 @@
 <template>
-	<!-- 登录页面 -->
 	<!-- 整个登陆页面的div -->
+<<<<<<< HEAD
+	<div id="login">
+		<el-row>
+			
+			
+				<router-link id="link-return" :to="{name:'home'}">返回登录</router-link>
+			
+		</el-row>
+		fdfs
+=======
 	<div id="login" style=" background-color: cornsilk;">
+
 		<!-- logo框 -->
 		<div style=" background-color:lightcyan ;">
 			<!-- honeydew -->
@@ -13,8 +23,7 @@
 		<!-- 链接框 -->
 		<div style="background-color: lightcyan; text-align: right; height: 1%;">
 			<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> -->
-			<router-link :to="{name:'notice'}" style="margin:20%; width: 40%; font-size:1em;">返回登录</router-link>
-			<!-- <a style="margin:20%; width: 40%; font-size:1em;" href="../views/Home.vue">返回登录</a> -->
+			<a style="margin:20%; width: 40%; font-size:1em; " href="../views/Home.vue">返回登录</a>
 		</div>
 
 		<!-- 内容框 -->
@@ -191,6 +200,7 @@
 			</span>
 		</div>
 		<br />
+>>>>>>> 54acfcee9105aeb49a93f73fa4fd2245081f1d4b
 	</div>
 </template>
 

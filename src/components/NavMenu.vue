@@ -33,12 +33,12 @@
 	}
 
 	.shape {
-		margin: 20px auto;
+		margin: 10px auto;
 		width: 90%;
 		height: 40px;
 		background-color: #6495ED;
 		list-style: none;
-		border-radius:10px
+		border-radius:10px;
 	}
 
 	.shape li {

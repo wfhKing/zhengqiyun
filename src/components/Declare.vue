@@ -2,11 +2,11 @@
 	<div id="declare" >
 		<!--数据统计框-->
 		<el-row :gutter="20">
-			<el-col :span="10"  :offset="2">
+			<el-col :span="10" :offset="2">
 			<div class="grid-content bg-purple"  style=" height: 350px;">
 			
 				<div align="center"> 
-					<div slot="header"    class="clearfix">
+					<div slot="header" class="clearfix">
 						<b align="center">数据统计</b>
 					</div>
 					<br />

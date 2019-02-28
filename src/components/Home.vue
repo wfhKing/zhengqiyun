@@ -23,16 +23,14 @@
 							<router-link :to="{name:'login'}">登录/</router-link>
 							<router-link :to="{name:'register'}">注册</router-link>
 						</div>
-
 					</el-col>
 				</el-row>
 			</el-header>
-
 			<!-- 导航 -->
 			<NavMenu></NavMenu>
 
-			<!-- 各个页面 -->
 			<el-main>
+				<!-- 各个页面 -->
 				<router-view />
 			</el-main>
 		</el-container>

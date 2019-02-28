@@ -8,6 +8,7 @@ import Atlas from './components/Atlas.vue'
 import Declare from './components/Declare.vue'
 import Login from './components/Login.vue'
 import Register from './components/Register.vue'
+import PolicyList from './components/PolicyList.vue'
 
 Vue.use(Router)
 
@@ -45,6 +46,10 @@ export default new Router({
 					path: '/declare',
 					name: 'declare',
 					component: Declare
+				}, {
+					path: '/policylist',
+					name: 'policylist',
+					component: PolicyList
 				}
 				
 			]

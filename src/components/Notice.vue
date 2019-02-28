@@ -16,11 +16,11 @@
 				<el-card class="box-card">
 					<div slot="header" class="clearfix" style="line-height: 15px;">
 						<span style="color: darkred;font-weight: bold;font-size: 18px;">公告</span>
-						<a href="" style="float: right;font-size: 14px;">更多</a>
+						<router-link :to="{name:'policylist'}" style="float: right;font-size: 14px;">更多</router-link>
 					</div>
 					<div v-for="notice in notices" :key="notice" class="text item">
-						<a href="#">{{notice.title}}</a>
-						<span style="float: right;">{{notice.date}}</span>
+						<a href="#">{{notice.title.length>7?notice.title.substring(0,7)+"...":notice.title}}</a>
+						<span style="float: right;font-size: 15px;">{{notice.date}}</span>
 					</div>
 				</el-card>
 			</el-col>
@@ -33,7 +33,7 @@
 						<a href="#" style="float: right;font-size: 14px;">更多</a>
 					</div>
 					<div v-for="newest in newests" :key="newest" class="text item">
-						<a href="#"><span>[{{newest.level}}]{{newest.title}}</span></a>
+						<a href="#"><span>[{{newest.level}}]{{newest.title.length>7?newest.title.substring(0,7)+"...":notice.title}}</span></a>
 						<span style="float: right;">{{newest.date}}</span>
 					</div>
 				</el-card>
@@ -44,9 +44,15 @@
 						<span style="background-color: #e81111;color: white;font-size: 20px;">企业信息</span>
 						<a href="#" style="float: right;font-size: 14px;">更多</a>
 					</div>
-					<div v-for="notice in notices" :key="notice" class="text item">
-						<a href="#"><span>[全国]{{notice.title}}</span></a>
-						<span style="float: right;">{{notice.date}}</span>
+					<div>
+						<div style="float: left;">
+							<img src="../assets/Policy_1.jpg" width="150px" height="100px">
+						</div>
+						<div>
+							<p>珠海企业</p>
+							<p>珠海企业</p>
+						</div>
+						<!-- <span style="float: right;">{{notice.date}}</span> -->
 					</div>
 				</el-card>
 			</el-col>
@@ -59,6 +65,9 @@
 		name: 'notice',
 		data() {
 			return {
+				item: {
+					hasName: "这是用来测试的,看有没有错"
+				},
 				// 轮播图
 				dataimg: [{
 						src: require('../assets/img01.jpg'),
@@ -94,32 +103,52 @@
 				],
 				// 最新政策
 				newests: [{
-						level:"全国",
+						level: "全国",
 						title: "这里放的是最新政策标题",
 						date: "2019-02-32",
 					},
 					{
-						level:"全国",
+						level: "全国",
 						title: "这里放的是最新政策标题",
 						date: "2019-02-32",
 					},
 					{
-						level:"全国",
+						level: "全国",
 						title: "这里放的是最新政策标题",
 						date: "2019-02-32",
 					},
 					{
-						level:"全国",
+						level: "全国",
+						title: "这里放的是最新政策标题",
+						date: "2019-02-32",
+					}, {
+						level: "全国",
 						title: "这里放的是最新政策标题",
 						date: "2019-02-32",
 					},
-				]
+				],
+				// 企业信息
+				enterprises: [{
+					name: "这里放企业名",
+					date: ""
+				}]
 			}
 		}
 	}
 </script>
 
 <style scoped>
+	/* 文本超出范围显示省略号 */
+	.nav {
+		display: block;
+		/*根据个人需要自定义宽度*/
+		width:3em;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+
+	}
+
 	#notice ul li {
 		margin-bottom: 10px;
 	}
@@ -129,7 +158,7 @@
 	}
 
 	.item {
-		margin-bottom: 10px;
+		margin-bottom: 0px;
 	}
 
 	.clearfix:before,
