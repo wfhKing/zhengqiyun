@@ -1,6 +1,6 @@
 <template>
 
-	<div id="register" style="background-color: #00008B;" >
+	<div id="register" style="background-color: #00008B;">
 
 		<el-row>
 			<el-col :span="12">
@@ -9,7 +9,7 @@
 				</div>
 			</el-col>
 			<el-col :span="12">
-				<router-link id="link-return" :to="{name:'home'}">返回登录</router-link>
+				<router-link id="link-return" :to="{path:'/home'}">返回登录</router-link>
 			</el-col>
 		</el-row>
 
@@ -89,6 +89,9 @@
 							<el-date-picker type="date" placeholder="选择日期" v-model="ruleForm.approved_time" style="width: 100%;"></el-date-picker>
 						</el-form-item>
 
+						<el-form-item>
+							<el-button id="submit_button" type="primary" @click="submitForm('ruleForm')">立即注册</el-button>
+						</el-form-item>
 						<br />
 					</el-form>
 
@@ -116,7 +119,7 @@
 </template>
 
 
-<script >
+<script>
 	export default {
 		data() {
 			return {
@@ -290,9 +293,6 @@
 						return false;
 					}
 				});
-			},
-			resetForm(formName) {
-				this.$refs[formName].resetFields();
 			}
 		}
 	}
@@ -300,7 +300,7 @@
 
 <style scoped>
 	.el-row {
-		background-color:#00008B /* midnightblue */;
+		background-color: #00008B;
 		color: #333;
 		text-align: center;
 		margin-bottom: 1em;
@@ -316,14 +316,14 @@
 	#img-logo {
 		width: 65%;
 		margin: 1em 0 0 3em;
-		
+
 	}
 
 	#link-return {
 		color: #FFFFFF;
-		margin: 7em 0em 0em 34em; 
-		font-size:0.8em;
-		display:block;
+		margin: 7em 0em 0em 34em;
+		font-size: 0.8em;
+		display: block;
 		width: 10%;
 	}
 
@@ -356,5 +356,9 @@
 		color: #99A9BF;
 		font-size: 0.5em;
 		margin-left: -19em;
+	}
+	
+	#submit_button{
+		margin-right: 7em;
 	}
 </style>

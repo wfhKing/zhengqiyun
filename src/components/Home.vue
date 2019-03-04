@@ -1,4 +1,5 @@
 <template>
+	
 	<!-- 二级页面的汇总 -->
 	<div class="home">
 		<el-container>
@@ -22,6 +23,10 @@
 							</el-input>
 							<router-link :to="{name:'login'}">登录/</router-link>
 							<router-link :to="{name:'register'}">注册</router-link>
+							
+							
+							
+							
 						</div>
 					</el-col>
 				</el-row>
