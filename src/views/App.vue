@@ -14,12 +14,7 @@
 						<router-link :to="{path:'/home'}">诉求</router-link>
 					</el-breadcrumb-item>
 					<el-breadcrumb-item>
-<<<<<<< HEAD
-						<a @click="dialogFormVisible = true">登录</a>
-=======
-							<a @click="dialogFormVisible = true">登录</a>	
-												
->>>>>>> 73adefe04417a1d33894a575d533545446bd8b99
+						<a @click="dialogFormVisible = true">登录</a>	
 						<el-dialog title="用户登录" :visible.sync="dialogFormVisible" width="40%" customClass="customheight">
 							<hr style="margin-top: -2em;" />
 							<el-form :model="form" class="sss">

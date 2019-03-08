@@ -9,7 +9,6 @@ import Declare from './components/Declare.vue'
 import Login from './components/Login.vue'
 import Register from './components/Register.vue'
 import PolicyList from './components/PolicyList.vue'
-import testLogin from './components/testLogin.vue'
 
 Vue.use(Router)
 
@@ -64,10 +63,6 @@ export default new Router({
 			path:'/register',
 			name:'register',
 			component:Register
-		},{
-			path:'/testlogin',
-			name:'testlogin',
-			component:testLogin
 		}
 
 	]
