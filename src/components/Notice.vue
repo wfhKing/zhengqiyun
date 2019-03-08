@@ -49,7 +49,7 @@
 							<img src="../assets/Policy_1.jpg" width="150px" height="100px">
 						</div>
 						<div>
-							<p>珠海企业</p>
+							<p>珠海名称</p>
 							<p>珠海企业</p>
 						</div>
 						<!-- <span style="float: right;">{{notice.date}}</span> -->

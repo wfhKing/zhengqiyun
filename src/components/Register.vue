@@ -1,7 +1,5 @@
 <template>
-
-	<div id="register" style="background-color: #00008B;">
-
+	<div id="register" style="background-color: #00008B;" >
 		<el-row>
 			<el-col :span="12">
 				<div style="text-align: center;">

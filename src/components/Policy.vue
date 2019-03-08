@@ -1,8 +1,5 @@
 <template>
 	<div id="policy">
-		
-		
-		
 		<el-row :gutter="20">
 		  <el-col :span="6" :offset="2">
 			  <div class="grid-content bg-purple">
@@ -24,9 +21,6 @@
 				</el-row>
 			  </div>
 		  </el-col>
-		  
-		  
-		  
 		  <el-col :span="6" :offset="1">
 			  <div class="grid-content bg-purple">
 				  <el-row>
@@ -48,10 +42,6 @@
 				  </el-row>
 			  </div>
 		  </el-col>
-		  
-		  
-		  
-		  
 		  <el-col :span="6" :offset="1">
 			  <div class="grid-content bg-purple">
 				  <el-row>
@@ -76,10 +66,6 @@
 		  </el-col>
 
 		</el-row>
-		
-		
-		
-		
 		<el-row :gutter="20">
 		  <el-col :span="18" :offset="2">
 			  <div class="grid-content bg-purple">
